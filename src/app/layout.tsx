@@ -17,6 +17,9 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Soundwave School of Music",
   description: "Elite conservatory for guitar and piano instruction.",
+  icons: {
+    icon: "/icon.png", // This points to your new file
+  },
 };
 
 export default function RootLayout({
@@ -31,9 +34,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[#0F172A] text-[#F8FAFC]">
         <Navbar />
-        <main className="flex-grow">
-          {children}
-        </main>
+        <main className="flex-grow">{children}</main>
         <Footer />
       </body>
     </html>
